@@ -1,4 +1,4 @@
-﻿# OldTweetDeck
+﻿# XDeck
 
 Returns old TweetDeck, for free!  
 > [!IMPORTANT]
@@ -9,7 +9,7 @@ Returns old TweetDeck, for free!
 > Since Twitter made likes private, the Likes tab aren't loading anymore.  
 > This can not be fixed since the API to retrieve the likes is gone. Same thing with Activity column.
 
-> If you're interested in getting 2015-2018 Twitter back, you can also check out [OldTwitter](https://github.com/dimdenGD/OldTwitter) extension.
+> If you're interested in getting 2015-2018 Twitter back, you can also check out [OldTwitter](https://github.com/RMOnft/OldTwitter) extension.
 
 ![Screenshot](https://lune.dimden.dev/9713d947d56.png)
 
@@ -24,7 +24,7 @@ Note: Do not delete the extension files (unzipped archive for Chromium, zip file
 
 ### Chromium (Chrome, Edge, Opera, Brave, Etc.)
 
-1. Go to [Release page](https://github.com/dimdenGD/OldTweetDeck/releases) and download `OldTweetDeckChrome.zip`
+1. Go to [Release page](https://github.com/RMOnft/XDeck/releases) and download `XDeckChrome.zip`
 2. Unzip the archive
 3. Go to extentions page (`chrome://extensions`)
 4. Enable developer mode (there should be switch somewhere on that page)
@@ -37,7 +37,7 @@ Note: Do not delete the extension files (unzipped archive for Chromium, zip file
 
 #### Nightly / Developer Edition
 
-1. Go to [Release page](https://github.com/dimdenGD/OldTweetDeck/releases) and download `OldTweetDeckFirefox.zip`
+1. Go to [Release page](https://github.com/RMOnft/XDeck/releases) and download `XDeckFirefox.zip`
 2. Go to Firefox Configuration Editor (`about:config`)
 3. Change the preference `xpinstall.signatures.required` to false
 4. Go to addons page(`about:addons`)
@@ -65,7 +65,7 @@ If extension files were updated, you have to reinstall extension to get new upda
 
 ## Better TweetDeck
 
-I've made a fork of BetterTD that works with this extension, you can find it [here](https://github.com/dimdenGD/BetterTweetDeck/releases).  
+I've made a fork of BetterTD that works with this extension, you can find it [here](https://github.com/RMOnft/BetterTweetDeck/releases).  
 Install it the same way as this extension.
 
 ## FAQ
@@ -76,11 +76,11 @@ Before opening an issue, try to reinstall extension.
 
 #### There is a warning: Manifest version 2 is deprecated, and support will be removed in 2023.
 
-Update to latest OldTweetDeck version.
+Update to latest XDeck version.
 
 #### 'Link another account you own' doesn't work.
 
-See https://github.com/dimdenGD/OldTweetDeck/issues/259#issuecomment-2281786253 for a workaround.
+See https://github.com/RMOnft/XDeck/issues/259#issuecomment-2281786253 for a workaround.
 
 #### User or Search column aren't loading for me.
 

@@ -28,16 +28,16 @@ jobs:
         run: npm run build
 
       - name: Unzip extension
-        run: unzip -qq ../OldTweetDeckChrome.zip -d OldTweetDeckChrome; unzip -qq ../OldTweetDeckFirefox.zip -d OldTweetDeckFirefox
+        run: unzip -qq ../XDeckChrome.zip -d XDeckChrome; unzip -qq ../XDeckFirefox.zip -d XDeckFirefox
         working-directory: ${{ github.workspace }}
         
       - name: Upload for Firefox
         uses: actions/upload-artifact@v4
         with:
-          name: OldTweetDeckFirefox
-          path: ${{ github.workspace }}/OldTweetDeckFirefox
+          name: XDeckFirefox
+          path: ${{ github.workspace }}/XDeckFirefox
       - name: Upload for Chromium
         uses: actions/upload-artifact@v4
         with:
-          name: OldTweetDeckChrome
-          path: ${{ github.workspace }}/OldTweetDeckChrome
+          name: XDeckChrome
+          path: ${{ github.workspace }}/XDeckChrome

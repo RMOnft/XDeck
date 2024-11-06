@@ -1,14 +1,14 @@
 {
-  "name": "oldtweetdeck",
+  "name": "xdeck",
   "version": "0.0.0",
-  "description": "Returns old TweetDeck, for free!",
+  "description": "Returns old TweetDeck, for X and for free!",
   "main": "pack.js",
   "scripts": {
     "build": "node pack.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dimdenGD/OldTweetDeck.git"
+    "url": "git+https://github.com/RMOnft/XDeck.git"
   },
   "keywords": [
     "twitter",
@@ -20,9 +20,9 @@
   "author": "dimden",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dimdenGD/OldTweetDeck/issues"
+    "url": "https://github.com/RMOnft/XDeck/issues"
   },
-  "homepage": "https://github.com/dimdenGD/OldTweetDeck#readme",
+  "homepage": "https://github.com/RMOnft/XDeck#readme",
   "dependencies": {
     "adm-zip": "^0.5.10"
   }

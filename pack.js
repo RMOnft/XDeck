@@ -20,23 +20,23 @@ async function copyDir(src, dest) {
     }
 }
 
-if(fs.existsSync('../OldTweetDeckTempChrome')) {
-    fs.rmSync('../OldTweetDeckTempChrome', { recursive: true });
+if(fs.existsSync('../XDeckTempChrome')) {
+    fs.rmSync('../XDeckTempChrome', { recursive: true });
 }
-if(fs.existsSync('../OldTweetDeckFirefox')) {
-    fs.rmSync('../OldTweetDeckFirefox', { recursive: true });
+if(fs.existsSync('../XDeckFirefox')) {
+    fs.rmSync('../XDeckFirefox', { recursive: true });
 }
 
 console.log("Copying...");
-copyDir('./', '../OldTweetDeckFirefox').then(async () => {
-    await copyDir('./', '../OldTweetDeckTempChrome');
+copyDir('./', '../XDeckFirefox').then(async () => {
+    await copyDir('./', '../XDeckTempChrome');
     console.log("Copied!");
     console.log("Patching...");
 
-    let manifest = JSON.parse(await fsp.readFile('../OldTweetDeckTempChrome/manifest.json', 'utf8'));
+    let manifest = JSON.parse(await fsp.readFile('../XDeckTempChrome/manifest.json', 'utf8'));
     manifest.browser_specific_settings = {
         gecko: {
-            id: "oldtweetdeck@dimden.dev",
+            id: "xdeck@dimden.dev",
             strict_min_version: "90.0"
         }
     };
@@ -56,25 +56,25 @@ copyDir('./', '../OldTweetDeckFirefox').then(async () => {
     }
     manifest.web_accessible_resources = manifest.web_accessible_resources[0].resources;
 
-    fs.unlinkSync('../OldTweetDeckFirefox/pack.js');
-    fs.unlinkSync('../OldTweetDeckTempChrome/pack.js');
-    fs.unlinkSync('../OldTweetDeckFirefox/README.md');
-    fs.unlinkSync('../OldTweetDeckTempChrome/README.md');
-    fs.unlinkSync('../OldTweetDeckFirefox/package.json');
-    fs.unlinkSync('../OldTweetDeckTempChrome/package.json');
-    fs.unlinkSync('../OldTweetDeckFirefox/package-lock.json');
-    fs.unlinkSync('../OldTweetDeckTempChrome/package-lock.json');
-    fs.unlinkSync('../OldTweetDeckFirefox/.gitignore');
-    fs.unlinkSync('../OldTweetDeckTempChrome/.gitignore');
-    fs.writeFileSync('../OldTweetDeckFirefox/manifest.json', JSON.stringify(manifest, null, 2));
+    fs.unlinkSync('../XDeckFirefox/pack.js');
+    fs.unlinkSync('../XDeckTempChrome/pack.js');
+    fs.unlinkSync('../XDeckFirefox/README.md');
+    fs.unlinkSync('../XDeckTempChrome/README.md');
+    fs.unlinkSync('../XDeckFirefox/package.json');
+    fs.unlinkSync('../XDeckTempChrome/package.json');
+    fs.unlinkSync('../XDeckFirefox/package-lock.json');
+    fs.unlinkSync('../XDeckTempChrome/package-lock.json');
+    fs.unlinkSync('../XDeckFirefox/.gitignore');
+    fs.unlinkSync('../XDeckTempChrome/.gitignore');
+    fs.writeFileSync('../XDeckFirefox/manifest.json', JSON.stringify(manifest, null, 2));
 
     console.log("Patched!");
 
     console.log("Zipping Firefox version...");
     try {
         const zip = new AdmZip();
-        const outputDir = "../OldTweetDeckFirefox.zip";
-        zip.addLocalFolder("../OldTweetDeckFirefox");
+        const outputDir = "../XDeckFirefox.zip";
+        zip.addLocalFolder("../XDeckFirefox");
         zip.writeZip(outputDir);
     } catch (e) {
         console.log(`Something went wrong ${e}`);
@@ -82,15 +82,15 @@ copyDir('./', '../OldTweetDeckFirefox').then(async () => {
     console.log("Zipping Chrome version...");
     try {
         const zip = new AdmZip();
-        const outputDir = "../OldTweetDeckChrome.zip";
-        zip.addLocalFolder("../OldTweetDeckTempChrome");
+        const outputDir = "../XDeckChrome.zip";
+        zip.addLocalFolder("../XDeckTempChrome");
         zip.writeZip(outputDir);
     } catch (e) {
         console.log(`Something went wrong ${e}`);
     }
     console.log("Zipped!");
     console.log("Deleting temporary folders...");
-    fs.rmSync('../OldTweetDeckTempChrome', { recursive: true });
-    fs.rmSync('../OldTweetDeckFirefox', { recursive: true });
+    fs.rmSync('../XDeckTempChrome', { recursive: true });
+    fs.rmSync('../XDeckFirefox', { recursive: true });
     console.log("Deleted!");
 });

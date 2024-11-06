@@ -1,4 +1,4 @@
-﻿# OldTweetDeck
+﻿# XDeck
 昔のTweetDeckを取り戻しましょう！無料で！
 
 > [!IMPORTANT]
@@ -9,7 +9,7 @@
 > Twitterがいいねを非公開にしたため、いいねタブは読み込まれなくなりました。  
 > いいねを取得するAPIが存在しなくなったため、これを修正することはできません。アクティビティタブにおいても同様です。
 
-> また、2015〜2018年のTwitterを取り戻したい場合は [OldTwitter](https://github.com/dimdenGD/OldTwitter) 拡張機能もチェックしてみてください。
+> また、2015〜2018年のTwitterを取り戻したい場合は [OldTwitter](https://github.com/RMOnft/OldTwitter) 拡張機能もチェックしてみてください。
 
 ![スクリーンショット](https://lune.dimden.dev/9713d947d56.png)
 
@@ -23,7 +23,7 @@
 
 ### Chromium (Chrome, Edge, Opera, Brave など) 
 
-1. [リリースページ](https://github.com/dimdenGD/OldTweetDeck/releases) から `OldTweetDeckChrome.zip` をダウンロードする
+1. [リリースページ](https://github.com/RMOnft/XDeck/releases) から `XDeckChrome.zip` をダウンロードする
 2. Zipファイルを展開する
 3. 拡張機能ページを開く (`chrome://extensions`)
 4. デベロッパーモードを有効にする (拡張機能ページの右上に切り替えスイッチがあります)
@@ -36,7 +36,7 @@
 
 #### Nightly / Developer Edition
 
-1. [リリースページ](https://github.com/dimdenGD/OldTweetDeck/releases) から `OldTweetDeckFirefox.zip` をダウンロードする
+1. [リリースページ](https://github.com/RMOnft/XDeck/releases) から `XDeckFirefox.zip` をダウンロードする
 2. 高度な設定ページを開く (`about:config`)
 3. `xpinstall.signatures.required` の設定を false に変更する
 4. アドオンページを開く (`about:addons`)
@@ -64,7 +64,7 @@ TweetDeckのファイルが更新された場合は、タブを再読み込み�
 
 ## Better TweetDeck
 
-この拡張機能と一緒に使うことが出来るBetter TweetDeckの[fork](https://github.com/dimdenGD/BetterTweetDeck/releases)を作りました。  
+この拡張機能と一緒に使うことが出来るBetter TweetDeckの[fork](https://github.com/RMOnft/BetterTweetDeck/releases)を作りました。  
 この拡張機能のインストール方法と同じ方法でインストールすることができます。
 
 ## よくある質問
@@ -99,12 +99,12 @@ Twitterがいいねを非公開にしたことに伴い、いいねを取得す�
    * これを実行することにより、リクエストの署名が必須になります。アカウントがより安全になりますが、TweetDeckを正しく読み込むために何度もページをリロードする必要があるかもしれません。
 
 ### 4.0.1
-これはOldTweetDeckの新しいメジャーバージョンです。  
+これはXDeckの新しいメジャーバージョンです。  
 ご存知の場合もあるかとは存じますが、Chromeは拡張機能においてManifest V2を廃止し、Manifest V3へ移行しようとしています。  
-OldTweetDeckはずっとManifest V2を使用していたため、Manifest V3を使用するようにコードを組み直しました。  
+XDeckはずっとManifest V2を使用していたため、Manifest V3を使用するようにコードを組み直しました。  
 これにより、Manifest V2の廃止後も引き続き拡張機能が動作するはずです。  
 この変更は少し試験的なものであるため、バグなどを発見した場合はご報告ください。  
-また、`OldTweetDeck v3.6.8`も現状まだ使える状態ですので、もし`v4.x`が動かない場合は引き続き`v3.6.8`をご利用いただけます。
+また、`XDeck v3.6.8`も現状まだ使える状態ですので、もし`v4.x`が動かない場合は引き続き`v3.6.8`をご利用いただけます。
 
 **開発者はウクライナ在住で、かなりひどい状況にあります。可能であれば[寄付](https://dimden.dev/donate/)をお願いいたします。**  
 **いつもご支援いただきありがとうございます。**
@@ -122,7 +122,7 @@ OldTweetDeckはずっとManifest V2を使用していたため、Manifest V3を�
 * リプライがスパム判定される問題をおそらく修正
 
 ### 3.6.4
-* Twitter側のコード変更によるOldTweetDeckが起動できない問題を修正
+* Twitter側のコード変更によるXDeckが起動できない問題を修正
 
 ### 3.6.2
 * スタイル表示を修正
@@ -133,7 +133,7 @@ OldTweetDeckはずっとManifest V2を使用していたため、Manifest V3を�
 * カラムが読み込まれない問題とツイートが送信されない問題を修正
 
 ### 3.6
-OldTweetDeckが`x.com`上で動作しない問題を修正しました。  
+XDeckが`x.com`上で動作しない問題を修正しました。  
 (訳者注: TweetDeckのURLが`twitter.com/i/tweetdeck`から`x.com/i/tweetdeck`に変わりました)
 
 ### 3.5.5
@@ -147,7 +147,7 @@ OldTweetDeckが`x.com`上で動作しない問題を修正しました。
 
 ### 3.5
 * ログアウトやロックされる問題をおそらく修正できました。  
-* このバージョンでは、ウェブ版のTwitterと比較してOldTweetDeckのリクエストに不足していた最後のヘッダーをついに実装しました。  
+* このバージョンでは、ウェブ版のTwitterと比較してXDeckのリクエストに不足していた最後のヘッダーをついに実装しました。  
 * このジェネレーターは非常に難読化されており、基本的にはリクエストが実際にウェブ版のTwitterから行われているかどうかのセキュリティチェックを行います。  
 * 通常のリクエストと違うのはこれだけなので、これがログアウトやロックされる原因であることを祈ります。  
 
@@ -167,7 +167,7 @@ OldTweetDeckが`x.com`上で動作しない問題を修正しました。
 * フィルターを変更するとカラムが消える問題を修正
 
 ### 3.3.0
-* OldTweetdeckが読み込まれない問題を修正
+* xdeckが読み込まれない問題を修正
   * Twitterがカラムの位置と全体の状態を保存するAPIを削除したため、それらのAPIを再現しブラウザ内に状態を保存するようにしました
 * **TweetDeckの状態がリセットされるため、更新前でTweetDeckを表示できている場合は検索クエリやカラムの配置をメモしておくことをおすすめします！**
 
@@ -178,7 +178,7 @@ OldTweetDeckが`x.com`上で動作しない問題を修正しました。
 ### 3.2.2
 * フォローしていないアカウントへのリプライがホームタイムラインで表示される問題を修正
    * この挙動が気に入った人向けにオプションで切り替え可能にしました  
-![](https://github.com/dimdenGD/OldTweetDeck/assets/26517362/7e4321aa-9320-4e83-92e3-a8b6d29a8109)
+![](https://github.com/RMOnft/XDeck/assets/26517362/7e4321aa-9320-4e83-92e3-a8b6d29a8109)
 
 ### 3.2.1
 * いいねを読み込めるように修正
@@ -202,12 +202,12 @@ tweetdeck.com のリダイレクトを修正
 ### 3.1.7
 * API制限を緩和する機能を再び追加しました！  
 ![TweetDeckの設定ボタンから設定画面を開く](https://github-production-user-asset-6210df.s3.amazonaws.com/26517362/269732181-f3eb8979-a452-4080-bc50-a96d1cc41ed6.png)  
-![Enable rate limit bypass (OldTweetDeck)をクリック](https://github-production-user-asset-6210df.s3.amazonaws.com/26517362/269732138-785187b2-fbdd-456f-b53e-007b9ab0b68f.png)
+![Enable rate limit bypass (XDeck)をクリック](https://github-production-user-asset-6210df.s3.amazonaws.com/26517362/269732138-785187b2-fbdd-456f-b53e-007b9ab0b68f.png)
 
-TweetDeckの設定ボタンから設定画面を開き、`Enable rate limit bypass (OldTweetDeck)`をチェックすることで有効にできます
+TweetDeckの設定ボタンから設定画面を開き、`Enable rate limit bypass (XDeck)`をチェックすることで有効にできます
 
 API制限の緩和機能を利用する場合、以下の点にご留意ください
-* API制限を受けた後に緩和機能を有効にした場合、OldTweetDeckは動作を再開するはずですが、Twitter Webはしばらくの間API制限が続く可能性があります
+* API制限を受けた後に緩和機能を有効にした場合、XDeckは動作を再開するはずですが、Twitter Webはしばらくの間API制限が続く可能性があります
 * API制限の緩和機能の利用はリスクが高くなります、自己責任でご利用ください
 * この機能はしばらくテストされていないため、実際長期的にうまく機能するかどうか不明です
 * 単なる理論的な考えですが、この機能を有効にしてもAPI制限を受けている場合、この機能を無効にするとAPI制限が解除される可能性があります
@@ -305,5 +305,5 @@ manifest V2 で作り直し外部サーバーを必要としないように変�
 ## 日本語翻訳
 [@katabame](https://twitter.com/katabame)  
 以下の時点の内容を基に翻訳されています。  
-* README: commit [26793aa](https://github.com/dimdenGD/OldTweetDeck/commit/26793aac1dfc85e3a1560e4a16ab346a05a0b0a4)  
-* 更新履歴: release/tag [v4.0.3](https://github.com/dimdenGD/OldTweetDeck/releases/tag/v4.0.3)
+* README: commit [26793aa](https://github.com/RMOnft/XDeck/commit/26793aac1dfc85e3a1560e4a16ab346a05a0b0a4)  
+* 更新履歴: release/tag [v4.0.3](https://github.com/RMOnft/XDeck/releases/tag/v4.0.3)
